@@ -7,7 +7,7 @@ categories: elexir phoenix
 
 Test code snippets of Elexir
 
-{% highlight elixir %}
+{% highlight vim %}
 mix phoenix.new hello
 {% endhighlight %}
 
