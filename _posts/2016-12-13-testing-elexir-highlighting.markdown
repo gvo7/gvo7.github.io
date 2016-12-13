@@ -10,3 +10,23 @@ Test code snippets of Elexir
 {% highlight elixir %}
 mix phoenix.new hello
 {% endhighlight %}
+
+
+{% highlight elixir %}
+defmodule Productlayer.Repo.Migrations.CreateUser do
+  use Ecto.Migration
+
+  def change do
+    create table(:users) do
+      add :name, :string
+      add :username, :string, null: false
+      add :password_hash, :string
+      add :mail, :string
+
+      timestamps()
+    end
+
+    create unique_index(:users, [:username])
+  end
+end
+{% endhighlight %}
