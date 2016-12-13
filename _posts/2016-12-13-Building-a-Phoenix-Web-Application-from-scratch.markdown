@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Building a Phoenix Web Application from scratch"
+title:  "Building a Phoenix web application from scratch"
 date:   2016-12-13 18:15:01 +0200
 categories: elexir phoenix
 ---
