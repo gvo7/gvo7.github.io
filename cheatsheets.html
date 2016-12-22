@@ -1,14 +1,17 @@
 ---
-heading: I like cupcakes
+layout: default
 ---
-<!doctype html>
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1>{{ page.heading | upcase }}</h1>
-  </body>
-</html>
+<div class="home">
+
+  <h1 class="page-heading">Cheatsheets</h1>
+
+  <ul class="tags">
+{% for tag in cheatsheets.tags %}
+  <li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
+{% endfor %}
+</ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
